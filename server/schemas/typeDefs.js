@@ -8,7 +8,7 @@ const typeDefs = `#graphql
   }
 
   type Book {
-    bookId: ID!
+    bookId: String!
     authors: [String]
     title: String!
     description: String
@@ -38,7 +38,7 @@ const typeDefs = `#graphql
     login(email: String!, password: String!): Auth
     addUser(username: String!, email: String!, password: String!): Auth
     saveBook(bookData: BookInput!): User
-    removeBook(bookId: ID!): User
+    removeBook(bookId: String!): User
   }
 `;
 
