@@ -4,11 +4,11 @@ const typeDefs = `#graphql
     username: String
     email: String
     bookCount: Int
-    saveBooks: [Book]
+    savedBooks: [Book]
   }
 
   type Book {
-    BookId: ID!
+    bookId: ID!
     authors: [String]
     title: String!
     description: String
